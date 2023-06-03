@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Update Delete</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <!--bootstrap css-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <!--fontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Poppins, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    body .btn {
+      transition: all 1s ease;
+      background-color: #000;
+      width: 100%;
+      max-width: 100px;
+      margin-top: 10px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="margin-bottom: 20px;">Add Update Delete</h1>
+
+    <!-- Add Form -->
+    <form id="add-form">
+      <h2>Add Item</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" cols="60" rows="10" required></textarea>
+      <a href="#" class="btn" type="submit">Add</a>
+    </form>
+
+    <!-- Update Form -->
+    <form id="update-form">
+      <h2>Update Item</h2>
+      <label for="update-name">Name:</label>
+      <input type="text" id="update-name" name="update-name" required>
+      <label for="update-description">Description:</label>
+      <textarea id="update-description" name="update-description" cols="60" rows="10" required></textarea>
+      <a href="#" class="btn" type="submit">Update</a>
+    </form>
+
+    <!-- Delete Form -->
+    <form id="delete-form">
+      <h2>Delete Item</h2>
+      <label for="delete-name">Name:</label>
+      <input type="text" id="delete-name" name="delete-name" required>
+      <a href="#" class="btn" type="submit">Delete</a>
+    </form>
+  </div>
+</body>
+</html>
+
