@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Description</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!--fontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header mb-5">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">getScholarship</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                            <a class="nav-link" aria-current="page" href="admin.html">Dashboard</a>
+                        </div>
+
+                        <div class="navbar-nav dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Explore
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="scholarship.html">Scholarships</a></li>
+                                <li><a class="dropdown-item" href="internship.html">Internships</a></li>
+                                <li><a class="dropdown-item" href="job.html">Jobs</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="navbar-nav login">
+                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="nav-link" href="register.html">Register</a>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="section apply">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="jobDetail">
+                        <h2>Scholarship Description</h2>
+
+                        <h3>Scholarship Title: Academic Excellence Scholarship</h3>
+                        <p>XYZ University is pleased to offer the Academic Excellence Scholarship to outstanding
+                            students who have demonstrated exceptional academic achievements and leadership abilities.
+                        </p>
+
+                        <h3>Scholarship Amount: $10,000</h3>
+
+                        <h3>Eligibility Criteria:</h3>
+                        <ul>
+                            <li>High school seniors or current undergraduate students</li>
+                            <li>GPA of 3.5 or higher on a 4.0 scale</li>
+                            <li>Active involvement in extracurricular activities or community service</li>
+                            <li>Essay submission on a specified topic</li>
+                            <li>Letter of recommendation from a teacher or mentor</li>
+                        </ul>
+
+                        <h3>Application Process:</h3>
+                        <ol>
+                            <li>Complete the online scholarship application form.</li>
+                            <li>Submit an official transcript of academic records.</li>
+                            <li>Write an essay addressing the given prompt.</li>
+                            <li>Obtain a letter of recommendation from a teacher or mentor.</li>
+                            <li>Submit all required documents by the specified deadline.</li>
+                        </ol>
+
+                        <h3>Selection Criteria:</h3>
+                        <p>A selection committee will review the scholarship applications based on academic
+                            achievements, extracurricular involvement, leadership potential, essay quality, and
+                            recommendation letter.</p>
+
+                        <h3>Benefits of the Scholarship:</h3>
+                        <ul>
+                            <li>Financial support of $10,000 to cover educational expenses</li>
+                            <li>Recognition as an Academic Excellence Scholar</li>
+                            <li>Potential networking opportunities with other scholarship recipients</li>
+                            <li>Enhanced resume and academic profile</li>
+                        </ul>
+
+                        <h3>Important Dates:</h3>
+                        <ul>
+                            <li>Application Deadline: October 15th</li>
+                            <li>Scholarship Award Notification: November 15th</li>
+                            <li>Disbursement of Funds: December 1st</li>
+                        </ul>
+
+                        <h3>Contact Information:</h3>
+                        <p>If you have any questions or need further information, please contact our Scholarship Office
+                            at scholarship@xyzuniversity.edu or call (555) 123-4567.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+
+
+                    <h2>Scholarship Application</h2>
+
+                    <form action="submit-application.php" method="POST">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" class="mb-3" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="mb-3" required>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" class="mb-3" required>
+
+                        <label for="university">University/College:</label>
+                        <input type="text" id="university" name="university" class="mb-3" required>
+
+                        <label for="gpa">GPA:</label>
+                        <input type="number" id="gpa" name="gpa" step="0.01" class="mb-3" required>
+
+                        <label for="activities">Extracurricular Activities:</label>
+                        <textarea id="activities" name="activities" cols="60" rows="10" class="mb-3"
+                            required></textarea>
+
+                        <label for="recommendation">Letter of Recommendation:</label>
+                        <input type="file" id="recommendation" name="recommendation" accept="application/pdf"
+                            class="mb-4" required>
+
+                        <div class="applyBtn">
+                        <a href="#" class="btn" style="width:25%">Submit</a>
+                    </div>
+                    </form>
+</body>
+
+</html>
+
+</div>
+
+
+</div>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
